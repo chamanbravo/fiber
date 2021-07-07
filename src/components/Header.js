@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Sidebar from './Sidebar';
 import './Header.css'
+import Button from './Button';
 
 function Header() {
     const [click, setclick] = useState(false);
@@ -21,9 +22,11 @@ function Header() {
                     </ul>
                 </div>
                 <div className="menu-right">   
-                    <a href="#"><h4>Sign In</h4></a>
-                    <a href="#" className="signup-btn"><h4>Sign Up</h4></a>
+                    <a href="#" className="signin-btn"><h4>Sign In</h4></a>
+                    <Button className='btn-tertiary' text='Sign Up' link='' />
                 </div>
+                
+                
                 <h2 className="menu-icon" onClick={handleClick}>{click ? <FaTimes /> : <FaBars />}</h2>
             </div>
             <Sidebar click={click} handleClick={handleClick}/>

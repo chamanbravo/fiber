@@ -1,0 +1,38 @@
+.btn-primary{
+    background-color: var(--bs-primary);
+    padding: 0.6rem 1rem;
+    color: var(--bs-white);
+    border-radius: 5%;
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--bs-terniary);
+}
+
+.btn-secondary{
+    background-color: var(--bs-white);
+    padding: 0.6rem 1rem;
+    color: var(--bs-primary);
+    border-radius: 5%;
+    border: 1.2px solid var(--bs-white);
+}
+
+.btn-secondary:hover{
+    background-color: transparent;
+    color: var(--bs-white);
+}
+
+.btn-tertiary{
+    background-color: var(--bs-white);
+    padding: 0.4rem 1rem;
+    color: var(--bs-primary);
+    border-radius: 5%;
+    border: 1.2px solid var(--bs-gray);
+}
+
+.btn-tertiary:hover{
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border-color: var(--bs-primary);
+}

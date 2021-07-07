@@ -33,13 +33,12 @@ a{
 }
 
 .menu-right{
-    font-size: 1rem;
-    font-weight: 400;
     display: none;
+    align-items: center;
 }
 
-.signup-btn{
-    margin-left: 1rem;
+.signin-btn{
+    margin-right: 1rem;
 }
 
 .menu-icon{
