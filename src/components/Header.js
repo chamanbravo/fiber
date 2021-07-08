@@ -23,7 +23,7 @@ function Header() {
                 </div>
                 <div className="menu-right">   
                     <a href="#" className="signin-btn"><h4>Sign In</h4></a>
-                    <Button className='btn-tertiary' text='Sign Up' link='' />
+                    <Button className='btn-primary' text='Sign Up' link='' />
                 </div>
                 
                 

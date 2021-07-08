@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 import './Sidebar.css'
 
 function Sidebar({click, handleClick}) {
@@ -17,7 +18,7 @@ function Sidebar({click, handleClick}) {
                     </div>
                     <div className="bottom-menu">   
                         <h3>Sign In</h3>
-                        <a href="www.blah.com"><h4>Sign Up</h4></a>
+                        <Button className='btn-primary' text='Sign Up' Link='' />
                     </div>
                 </div>
             </div>

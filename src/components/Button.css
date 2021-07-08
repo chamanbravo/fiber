@@ -1,9 +1,15 @@
+button{
+    border-style: none;
+    border-radius: 5%;
+}
+
 .btn-primary{
     background-color: var(--bs-primary);
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.1rem;
     color: var(--bs-white);
-    border-radius: 5%;
     border-color: var(--bs-primary);
+    font-weight: 500;
+    width: fit-content;
 }
 
 .btn-primary:hover{
@@ -14,7 +20,6 @@
     background-color: var(--bs-white);
     padding: 0.6rem 1rem;
     color: var(--bs-primary);
-    border-radius: 5%;
     border: 1.2px solid var(--bs-white);
 }
 
@@ -27,7 +32,6 @@
     background-color: var(--bs-white);
     padding: 0.4rem 1rem;
     color: var(--bs-primary);
-    border-radius: 5%;
     border: 1.2px solid var(--bs-gray);
 }
 
@@ -35,4 +39,14 @@
     background-color: var(--bs-primary);
     color: var(--bs-white);
     border-color: var(--bs-primary);
+}
+
+.btn-simple{
+    background: none;
+    color: var(--bs-primary);
+    text-decoration: underline;
+}
+
+.btn-simple:hover{
+    color: var(--bs-black);
 }
