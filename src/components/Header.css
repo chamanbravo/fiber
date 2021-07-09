@@ -6,6 +6,9 @@ a{
 .header-container {
     width: 100%;
     background-color: var(--bs-secondary);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header-contents{

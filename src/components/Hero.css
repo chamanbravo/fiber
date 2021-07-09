@@ -4,11 +4,13 @@
 }
 
 .hero-content{
-    padding: 0 2rem 2rem;
+    margin: 0 2rem 2rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .hero-img{
@@ -37,14 +39,12 @@
     font-size: 1.8rem;
     margin-bottom: 1.2rem;
     font-weight: 700;
-    text-align: center;
     margin: 1rem 0;
 }
 
 .desc-text{
     max-width: 50ch;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 .button{
@@ -54,8 +54,13 @@
     margin-bottom: 1rem;
 }
 
-.checkList{
-    text-align: center;
+.btn1{
+    margin-bottom: 1rem;
+}
+
+.rev-col{
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .cp1, .cp2{
@@ -73,7 +78,7 @@
         width: 36rem;
     }
     .hero-content{
-        padding: 2rem 2rem;
+        margin: 2rem 2rem;
         flex-direction: row;
     }
     .review{
@@ -83,11 +88,9 @@
     .title-text{
         font-size: 2rem;
         margin-bottom: 1.2rem;
-        text-align: left;
     }
     .desc-text{
         max-width: 50ch;
-        text-align: left;
     }
     .button{
         display: flex;
@@ -95,22 +98,41 @@
         align-items: center;
         margin-bottom: 1rem;
     }
+    .btn1{
+        margin-bottom: unset;
+        margin-right: 2rem;
+    }
     .checkList{
-        text-align: left;
         display: inline-flex;
+    }
+    .rev-col{
+        flex-direction: row;
     }
 }
 
 @media (min-width: 1024px){
     .hero-img{
-        width: 48rem;
+        width: 45rem;
     }
     .hero-content{
         padding: 0 8rem 2rem;
+        padding-top: 2rem;
+    }
+    .title-text{
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 1280px){
+    .hero-img{
+        width: 48rem;
+    }
+    .hero-content{
+        margin: 0 8rem 2rem;
+        padding: 2rem 0;
     }
     .title-text{
         font-size: 3.2rem;
-        font-weight: 700;
-        text-align: left;
     }
 }

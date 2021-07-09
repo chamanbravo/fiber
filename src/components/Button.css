@@ -1,11 +1,15 @@
 button{
     border-style: none;
-    border-radius: 5%;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Inter",sans-serif;
+    cursor: pointer;
 }
 
 .btn-primary{
     background-color: var(--bs-primary);
-    padding: 0.6rem 1.1rem;
+    padding: 0.9rem 1.1rem;
     color: var(--bs-white);
     border-color: var(--bs-primary);
     font-weight: 500;
@@ -18,7 +22,7 @@ button{
 
 .btn-secondary{
     background-color: var(--bs-white);
-    padding: 0.6rem 1rem;
+    padding: 0.9rem 1.1rem;
     color: var(--bs-primary);
     border: 1.2px solid var(--bs-white);
 }

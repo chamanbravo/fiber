@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    background: var(--bs-white);
+}
+
+.features-container{
+    margin: 8rem 2rem;
+}
+
+.pre-text{
+    color: var(--bs-info);
+}
+
+.ftitle{
+    max-width: 25ch;
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+}
+
+@media (min-width: 768px){   
+    .features-content{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .features-container{
+        margin: 6rem 8rem;
+    } 
+}
