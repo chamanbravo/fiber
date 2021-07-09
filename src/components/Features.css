@@ -4,7 +4,7 @@
 }
 
 .features-container{
-    margin: 8rem 2rem;
+    margin: 6rem 2rem;
 }
 
 .pre-text{
@@ -25,7 +25,7 @@
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1280px){
     .features-container{
         margin: 6rem 8rem;
     } 

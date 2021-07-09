@@ -1,0 +1,34 @@
+.feedback-box{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.user{
+    display: inline-flex;
+    align-items: center;
+}
+
+.userImg{
+    margin-right: 0.6rem;
+}
+
+.userName{
+    color: var(--bs-primary);
+    margin-bottom: 0.2rem;
+}
+
+.revenue{
+    font-weight: 500;
+}
+
+.feedback-text{
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px){
+    .feedback-box{
+        margin-bottom: 0;
+    }
+}

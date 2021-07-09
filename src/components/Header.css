@@ -9,6 +9,7 @@ a{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 .header-contents{
@@ -61,10 +62,13 @@ a{
 }
 
 @media (min-width: 1024px){
-    .header-contents{
-        padding: 1rem 8rem;
-    }
     .menu-center ul{
         gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px){
+    .header-contents{
+        padding: 1rem 8rem;
     }
 }

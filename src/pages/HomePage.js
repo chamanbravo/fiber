@@ -2,8 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
-
-
+import Community from '../components/Community'
 import checkmark from '../Assets/Checkmark.svg'
 import mainimg from '../Assets/hero-Illustration.png'
 import star from '../Assets/star.svg'
@@ -53,6 +52,8 @@ function HomePage() {
             btnText1='Start Free Trial'  
             heroimg={pagedemo}
             transform= 'translateY(5px)' />
+
+            <Community />
 
         </div>
     )
