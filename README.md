@@ -3,7 +3,7 @@
 
 React Practice website.
 
-![Design preview](./design-preview/desktop.png)
+![Design preview](./design-preview/desktop.jpg)
 
 
 ## Table of contents
