@@ -14,34 +14,34 @@ function Footer() {
                 <div className='col col2'>
                     <h3 className="footer-head">Sitemap</h3>
                     <ul className='footer-list'>
-                        <li><Button className='btn-nav footer-btn' text='Homepage' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Pricing' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Testimonial' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Features' href='#' /></li>  
+                        <li><Button className='btn-nav footer-btn' text='Homepage' link='#home' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Pricing' link='#pricing' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Testimonial' link='#community' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Features' link='#features' /></li>  
                     </ul>
                 </div>
                 <div className='col col3'>
                     <h3 className="footer-head">Resources</h3>
                     <ul className='footer-list'>
-                        <li><Button className='btn-nav footer-btn' text='Support' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Contact' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='FAQ' href='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Support' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Contact' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='FAQ' link='#' /></li>
                     </ul>
                 </div>
                 <div className='col col4'>
                     <h3 className="footer-head">Company</h3>
                     <ul className='footer-list'>
-                        <li><Button className='btn-nav footer-btn' text='About' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Customer' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Blog' href='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='About' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Customer' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Blog' link='#' /></li>
                     </ul>
                 </div>
                 <div className='col col5'>
                     <h3 className="footer-head">Portfolios</h3>
                     <ul className='footer-list'>
-                        <li><Button className='btn-nav footer-btn' text='Sarah Andrews' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Matthew Higgins' href='#' /></li>
-                        <li><Button className='btn-nav footer-btn' text='Janice Dave' href='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Sarah Andrews' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Matthew Higgins' link='#' /></li>
+                        <li><Button className='btn-nav footer-btn' text='Janice Dave' link='#' /></li>
                     </ul>
                 </div>
             </div>

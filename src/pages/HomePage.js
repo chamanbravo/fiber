@@ -22,7 +22,8 @@ function HomePage() {
             <Header />
 
             <Hero 
-            padding='4rem 0 4rem 0'
+            id='home'
+            padding='4rem 0 5rem 0'
             mainBg='--bs-secondary'
             background= '--bs-secondary'
             review={review} 
@@ -41,6 +42,7 @@ function HomePage() {
             <Features />
 
             <Hero
+            id='pricing'
             textColor='var(--bs-white)'
             classN='rev-col'
             mainBg='--bs-white'

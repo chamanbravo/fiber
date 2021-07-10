@@ -10,10 +10,10 @@ function Sidebar({click, handleClick}) {
                 <div className="menu-items">
                     <div className="top-menu">
                         <ul>
-                            <li onClick={handleClick}>Home</li>
-                            <li onClick={handleClick}>Community</li>
-                            <li onClick={handleClick}>Pricing</li>
-                            <li onClick={handleClick}>Features</li>
+                            <li><Button className='btn-nav' text='Home' link='#home' onClick={handleClick} /></li>
+                            <li><Button className='btn-nav' text='Features' link='#features' onClick={handleClick} /></li>
+                            <li><Button className='btn-nav' text='Pricing' link='#pricing' onClick={handleClick} /></li>
+                            <li><Button className='btn-nav' text='Community' link='#community' onClick={handleClick} /></li>  
                         </ul>
                     </div>
                     <div className="bottom-menu">   

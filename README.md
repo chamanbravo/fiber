@@ -19,8 +19,7 @@ React Practice website.
 
 ### Links
 
-- Solution: []()
-- Live Site: []()
+- Live Site: [https://fiberpage.vercel.app/](https://fiberpage.vercel.app/)
 
 ## My process
 

@@ -12,7 +12,7 @@ function Features() {
     const responsiveIcon = <img src={allSizes} alt='responsive' className='fImg' />
 
     return (
-        <div className='container'>
+        <div className='container' id='features'>
             <div className='features-container'>
                 <h4 className='pre-text'>Why Fiber?</h4>
                 <h1 className='ftitle'>A good portfolio means good employability</h1>

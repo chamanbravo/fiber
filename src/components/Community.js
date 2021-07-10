@@ -11,7 +11,7 @@ function Community() {
     const userC = <img src={user3} alt='user' className='userImg'/>
 
     return (
-        <div className='communuity-container'>
+        <div className='communuity-container' id='community'>
             <div className='community-content'>
                 <Feedback 
                 userImg={userA} 
