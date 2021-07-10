@@ -22,7 +22,7 @@ function HomePage() {
             <Header />
 
             <Hero 
-            padding='4rem 0 3rem 0'
+            padding='4rem 0 4rem 0'
             mainBg='--bs-secondary'
             background= '--bs-secondary'
             review={review} 

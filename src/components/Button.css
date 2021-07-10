@@ -55,3 +55,22 @@ button{
 .btn-simple:hover{
     color: var(--bs-black);
 }
+
+.btn-nav{
+    background: none;
+    color: var(--bs-black);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-btn{
+    font-weight: 400;
+}
+
+.btn-nav:hover{
+    color: var(--bs-info);
+}
+
+.boldText{
+    font-weight: 700;
+}

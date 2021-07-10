@@ -12,17 +12,17 @@ function Header() {
     return (
         <div className="header-container">
             <div className="header-contents">
-                <a href=''><h2>Fiber</h2></a>
+             <Button className='btn-nav boldText' text='Fiber' href='#' />
                 <div className="menu-center">
                     <ul>
-                        <a href=''><li>Home</li></a>
-                        <a href=''><li>Community</li></a>
-                        <a href=''><li>Pricing</li></a>
-                        <a href=''><li>Features</li></a>
+                        <li><Button className='btn-nav' text='Home' href='#' /></li>
+                        <li><Button className='btn-nav' text='Community' href='#' /></li>
+                        <li><Button className='btn-nav' text='Pricing' href='#' /></li>
+                        <li><Button className='btn-nav' text='Features' href='#' /></li>
                     </ul>
                 </div>
                 <div className="menu-right">   
-                    <a href="#" className="signin-btn"><h4>Sign In</h4></a>
+                    <Button className='btn-nav boldText' text='Sign In' href='#' />
                     <Button className='btn-primary' text='Sign Up' link='' />
                 </div>
                 

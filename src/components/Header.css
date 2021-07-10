@@ -39,6 +39,7 @@ a{
 .menu-right{
     display: none;
     align-items: center;
+    gap: 1rem;
 }
 
 .signin-btn{
