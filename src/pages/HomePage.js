@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
 import Community from '../components/Community'
+import Footer from '../components/Footer'
 import checkmark from '../Assets/Checkmark.svg'
 import mainimg from '../Assets/hero-Illustration.png'
 import star from '../Assets/star.svg'
@@ -54,6 +55,8 @@ function HomePage() {
             transform= 'translateY(5px)' />
 
             <Community />
+
+            <Footer />
 
         </div>
     )

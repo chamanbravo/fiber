@@ -2,9 +2,9 @@ import React from 'react'
 import Button from './Button'
 import './Feedback.css'
 
-function Feedback({userImg, userName, revenue, fText, btnText}) {
+function Feedback({userImg, userName, revenue, fText, btnText, className}) {
     return (
-        <div className='feedback-box'>
+        <div className={`feedback-box ${className}`}>
             <div className='user'>
                 {userImg}
                 <div className="user-info">

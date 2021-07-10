@@ -14,14 +14,23 @@
     }
     .third{
         grid-column: 1/3;
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px){
+    .community-content{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2rem;
+    }
+    .third{
+        grid-column: unset;
     }
 }
 
 @media (min-width: 1280px ){
     .community-content{
         margin: 5rem 8rem;
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-gap: 2rem;
     }
 }

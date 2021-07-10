@@ -12,13 +12,13 @@ function Header() {
     return (
         <div className="header-container">
             <div className="header-contents">
-                <h2>Fiber</h2>
+                <a href=''><h2>Fiber</h2></a>
                 <div className="menu-center">
                     <ul>
-                        <li>Home</li>
-                        <li>Community</li>
-                        <li>Pricing</li>
-                        <li>Features</li>
+                        <a href=''><li>Home</li></a>
+                        <a href=''><li>Community</li></a>
+                        <a href=''><li>Pricing</li></a>
+                        <a href=''><li>Features</li></a>
                     </ul>
                 </div>
                 <div className="menu-right">   
