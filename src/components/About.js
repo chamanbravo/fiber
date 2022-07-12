@@ -1,11 +1,9 @@
 import React from 'react'
 import Button from './Button'
-import heroImg from '../assets/hero-Illustration.png'
-import blob from '../assets/blob.png'
-import blobRT from '../assets/blobRT.png'
-import './Hero.css'
+import pageImage from '../assets/Page Image.png'
+import './About.css'
 
-function Hero() {
+function About() {
   return (
     <>
       <div className='hero-container' id='hero'>
@@ -25,19 +23,12 @@ function Hero() {
             </div>
           </div>
           <div className='hero-img'>
-            <img src={heroImg} alt='hero' className='hero-illustration' />
+            <img src={pageImage} alt='hero' className='hero-illustration' />
           </div>
         </div>
-
-        <img src={blob} alt='gradient-blob' className='gradient-blob__img' />
-        <img
-          src={blobRT}
-          alt='gradient-blob'
-          className='gradient-blob__imgRT'
-        />
       </div>
     </>
   )
 }
 
-export default Hero
+export default About

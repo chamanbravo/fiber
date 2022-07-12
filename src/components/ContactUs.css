@@ -1,0 +1,48 @@
+.contact-wrapper {
+  background: url('../assets/contact.jpg');
+  background-size: cover;
+  color: var(--bs-white);
+  margin: 4rem 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 20px;
+}
+
+.contact-header {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contactus-text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .contact-header {
+    max-width: 15ch;
+  }
+}
+
+@media (min-width: 1080px) {
+  .contact-header {
+    font-size: 4rem;
+    max-width: 10ch;
+  }
+  .contactus-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-wrapper {
+    margin: 6rem 8rem;
+  }
+}
