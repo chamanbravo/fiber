@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 function HomePage() {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <Features />
@@ -19,7 +19,7 @@ function HomePage() {
       <Pricing />
       <ContactUs />
       <Footer />
-    </div>
+    </>
   )
 }
 
