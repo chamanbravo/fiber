@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import pageImage from '../assets/Page Image.png'
+import pageImage from '../assets/page-image.png'
 import './About.css'
 
 function About() {

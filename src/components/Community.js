@@ -1,9 +1,9 @@
 import React from 'react'
 import Feedback from './Feedback'
 import './Community.css'
-import user1 from '../assets/User Avatar.svg'
-import user2 from '../assets/User Avatar 2.svg'
-import user3 from '../assets/User Avatar 32.svg'
+import user1 from '../assets/User-Avatar.svg'
+import user2 from '../assets/User-Avatar-2.svg'
+import user3 from '../assets/User-Avatar-32.svg'
 
 function Community() {
   const userA = <img src={user1} alt='user' className='userImg' />

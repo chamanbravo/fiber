@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import heroImg from '../assets/hero-Illustration.png'
+import heroImg from '../assets/hero-illustration.png'
 import blob from '../assets/blob.png'
 import blobRT from '../assets/blobRT.png'
 import './Hero.css'
