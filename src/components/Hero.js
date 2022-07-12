@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import heroImg from '../assets/hero-illustration.png'
 import blob from '../assets/blob.png'
-import blobRT from '../assets/blobRT.png'
+// import blobRT from '../assets/blobRT.png'
 import './Hero.css'
 
 function Hero() {
@@ -30,11 +30,11 @@ function Hero() {
         </div>
 
         <img src={blob} alt='gradient-blob' className='gradient-blob__img' />
-        <img
+        {/* <img
           src={blobRT}
           alt='gradient-blob'
           className='gradient-blob__imgRT'
-        />
+        /> */}
       </div>
     </>
   )
