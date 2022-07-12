@@ -18,7 +18,7 @@
     }
   },
   "rules": {
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": ["warn", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "react/no-unescaped-entities": "off"
