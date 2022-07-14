@@ -78,11 +78,6 @@ export default createSchema({
             },
           ],
         },
-        {
-          title: 'Image',
-          name: 'image',
-          type: 'image',
-        },
       ],
     },
 
@@ -163,8 +158,8 @@ export default createSchema({
       type: 'document',
       fields: [
         {
-          title: 'Testimonials',
-          name: 'testimonials',
+          title: 'Prices',
+          name: 'prices',
           type: 'array',
           of: [
             {
