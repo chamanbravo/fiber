@@ -1,19 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import sanityClient from '../client'
 import Button from './Button'
-import pageImage from '../assets/page-image.png'
 import './About.css'
 
 function About() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "about"]{
+      title,
+      description,
+      image{
+        asset->{
+          url
+        }
+      }
+    }`
+      )
+      .then((data) => setData(data))
+      .catch(console.error)
+  }, [])
+
   return (
     <>
       <div className='hero-container' id='hero'>
         <div className='hero-content'>
           <div className='hero-text'>
-            <h1 className='title-text'>Create your portfolio in minutes.</h1>
-            <p className='desc-text'>
-              With fiber, you can setup your own personal portfolio in minutes
-              with dozens of premade, beautiful templates.
-            </p>
+            <h1 className='title-text'>{data[0]?.title}</h1>
+            <p className='desc-text'>{data[0]?.description}</p>
             <div className='button'>
               <Button
                 className='btn-primary btn1'
@@ -23,7 +39,11 @@ function About() {
             </div>
           </div>
           <div className='hero-img'>
-            <img src={pageImage} alt='hero' className='hero-illustration' />
+            <img
+              src={data[0]?.image?.asset?.url}
+              alt='hero'
+              className='hero-illustration'
+            />
           </div>
         </div>
       </div>

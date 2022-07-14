@@ -4,7 +4,7 @@ import propTypes from 'prop-types'
 function FeaturesPoints({ icon, heading, paragraph }) {
   return (
     <div className='features-points' style={{}}>
-      {icon}
+      <img src={icon} alt={heading} />
       <h4 style={{ margin: '0.8rem 0', fontSize: '1.2rem' }}>{heading}</h4>
       <p>{paragraph}</p>
     </div>
@@ -12,7 +12,7 @@ function FeaturesPoints({ icon, heading, paragraph }) {
 }
 
 FeaturesPoints.propTypes = {
-  icon: propTypes.element.isRequired,
+  icon: propTypes.string.isRequired,
   heading: propTypes.string.isRequired,
   paragraph: propTypes.string.isRequired,
 }

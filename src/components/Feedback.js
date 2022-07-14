@@ -2,15 +2,14 @@ import React from 'react'
 import propTypes from 'prop-types'
 import './Feedback.css'
 
-function Feedback({ userImg, userName, revenue, fText, className }) {
+function Feedback({ userImg, userName, fText }) {
   return (
-    <div className={`feedback-box ${className}`}>
+    <div className='feedback-box'>
       <div className='user'>
-        {userImg}
-        <div className='user-info'>
-          <h4 className='userName'>{userName}</h4>
-          <p className='revenue'>{revenue}</p>
+        <div className='user__img'>
+          <img src={userImg} alt={userName} />
         </div>
+        <h4 className='userName'>{userName}</h4>
       </div>
       <div className='feedback-text'>
         <p>{fText}</p>
@@ -20,11 +19,9 @@ function Feedback({ userImg, userName, revenue, fText, className }) {
 }
 
 Feedback.propTypes = {
-  userImg: propTypes.element.isRequired,
+  userImg: propTypes.string.isRequired,
   userName: propTypes.string.isRequired,
-  revenue: propTypes.string.isRequired,
   fText: propTypes.string.isRequired,
-  className: propTypes.string,
 }
 
 export default Feedback

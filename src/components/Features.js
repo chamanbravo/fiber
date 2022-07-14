@@ -1,38 +1,48 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import sanityClient from '../client'
 import './Features.css'
 import FeaturesPoints from './FeaturesPoints'
-import time from '../assets/time.svg'
-import code from '../assets/code.svg'
-import allSizes from '../assets/allSizes.svg'
 
 function Features() {
-  const timeIcon = <img src={time} alt='time' className='fImg' />
-  const codeIcon = <img src={code} alt='code' className='fImg' />
-  const responsiveIcon = (
-    <img src={allSizes} alt='responsive' className='fImg' />
-  )
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "feature"]{
+      title,
+      subTitle,
+      features[]{
+        title,
+        description,
+        icon{
+          asset->{
+            url
+          }
+        }
+      }
+    }`
+      )
+      .then((data) => setData(data))
+      .catch(console.error)
+  }, [])
 
   return (
     <div className='container' id='features'>
       <div className='features-container'>
-        <h4 className='pre-text'>Why Fiber?</h4>
-        <h1 className='ftitle'>A good portfolio means good employability</h1>
+        <h4 className='pre-text'>{data[0]?.title}</h4>
+        <h1 className='ftitle'>{data[0]?.subTitle}</h1>
         <div className='features-content'>
-          <FeaturesPoints
-            icon={timeIcon}
-            heading='Build in minutes'
-            paragraph='With a selection of premade templates, you can build out a portfolio in less than 10 minutes.'
-          />
-          <FeaturesPoints
-            icon={codeIcon}
-            heading='Add custom CSS'
-            paragraph='Customize your personal portfolio even more with the ability to add you own custom CSS styles.'
-          />
-          <FeaturesPoints
-            icon={responsiveIcon}
-            heading='Responsive'
-            paragraph='All fiber templates are fully responsive to ensure the experience is seemless across all devices.'
-          />
+          {data[0]?.features?.map((feature, index) => {
+            return (
+              <FeaturesPoints
+                key={index}
+                icon={feature.icon.asset.url}
+                heading={feature.title}
+                paragraph={feature.description}
+              />
+            )
+          })}
         </div>
       </div>
     </div>
